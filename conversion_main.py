@@ -44,9 +44,9 @@ def main():
 
     # Authentication
     storage_client = storage.Client.from_service_account_json(
-        './amnet-dcm01.json'
+        './axxxx-dcm01.json'
     )
-    bucket_name = 'amnet_dbm_reports'
+    bucket_name = 'axxxx_dbm_reports'
     bucket = storage_client.get_bucket(bucket_name)
     blobs = list_blobs(bucket)
     for blob in blobs:
